@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 11 - Exercise 1</title>
+        <style>
+            #the-canvas { border: 1px dashed gray }   
+        </style>
+        <script>
+            addEventListener('load', function() {
+                var canvas = document.getElementById("the-canvas");
+                var canvasContext = canvas.getContext("2d");
+                canvasContext.fillStyle = "blue";
+                canvasContext.fillRect(20,20,100,100);
+
+                canvasContext.arc(200, 70, 50, 0, 2*Math.PI);
+                canvasContext.fillStyle = "red";
+                canvasContext.fill();
+            });
+        </script>
+    </head>
+    <body>
+        <canvas id="the-canvas" width="500" height="400">   
+            Your browser does not support the &lt;canvas&gt; element.
+        </canvas>
+    </body>
+</html>

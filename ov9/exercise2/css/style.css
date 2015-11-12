@@ -1,0 +1,18 @@
+h2 {
+	text-align: center;
+	margin-top: 15px;
+}
+
+#new-task-btn {
+	width: 20px;
+	padding: 0;
+}
+
+#list-of-tasks {
+	list-style: none;
+}
+
+#leftalign {
+	text-align: left;
+	margin-left: 80px;
+}

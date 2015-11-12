@@ -1,0 +1,132 @@
+body {
+	background-color: #EFEFEF;
+	color: #222;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+nav {
+	background-color: #FF8533;
+	border: 1px solid #dedede;
+	border-radius: 4px;
+	color: #888;
+	margin: 0 auto;
+	width: 70%; 
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+	
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s; 
+}
+
+nav > ul > li > a {
+	color: #fff;
+	display: block;
+	line-height: 56px;
+	padding: 0 24px;
+	text-decoration: none;
+}
+
+nav > ul > li:hover {
+	background-color: rgb( 40, 44, 47 );
+}
+
+nav > ul > li:hover > a {
+  color: rgb( 255, 255, 255 );
+}
+
+nav > ul > li:hover > a > .caret {
+  border-top-color: rgb( 255, 255, 255 );
+}
+
+.breadcrumb {
+	margin-left: -15px;
+	margin-top: -16px;
+	padding-left: 22px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: rgb(32, 162, 140);
+	background-image: -webkit-linear-gradient(135deg, rgb(32, 162, 140), rgb(104, 204, 187));
+	background-image: -moz-linear-gradient(135deg, rgb(32, 162, 140), rgb(104, 204, 187));
+	background-image: -o-linear-gradient(135deg, rgb(32, 162, 140), rgb(104, 204, 187));
+	background-image: linear-gradient(135deg, rgb(32, 162, 140), rgb(104, 204, 187));
+	color: #D3D3D3;
+}
+
+.previousBreadcrumbElement {
+	text-decoration: none;
+	color: #D3D3D3;
+}
+
+.currentBreadcrumbElement {
+	text-decoration: none;
+	color: #fff;
+}
+
+.previousBreadcrumbElement:hover, .currentBreadcrumbElement:hover {
+	color: #FF8533;
+}
+
+
+.contentContainer {
+	width: 69%;
+	margin: 0 auto;
+	background-color: #fff;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+section#main{
+	margin-bottom: 20px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+label span {
+	display: inline-block;
+	width: 200px;
+	text-align: left;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="date"],
+#contact-form #year {
+  border:1px solid #CCC;
+  margin:0 0 5px;
+  padding:5px;
+  border-radius:5px;
+  width: 180px;
+}
+
+#contact-form #year,
+#contact-form #startdate {
+	width: 180px;
+}
+
+input:required:invalid {
+  outline: 1px solid red;
+}
+input:focus:invalid {
+  color: red;
+}
+
+address {
+	text-align: center;
+}

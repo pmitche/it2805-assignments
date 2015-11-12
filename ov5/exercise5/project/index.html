@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/overall-style.css">
+		<title>Project - assignment 5</title>
+	</head>
+
+	<body>
+
+		<nav>
+			<ul>
+				<li><a href="../aboutme">About me</a></li>
+				<li><a href="../assignments">Assignments</a></li>
+				<li><a href="../schedule">Schedule</a></li>
+				<li><a href="../project">Project</a></li>
+			</ul>
+		</nav>
+
+		<div class="contentContainer">
+			<div class="breadcrumb">
+				<a class="previousBreadcrumbElement" href="../../../">paulpm</a> &raquo;
+				<a class="previousBreadcrumbElement" href="../../../ov5">ov5</a> &raquo;
+				<a class="previousBreadcrumbElement" href="../../../ov5/exercise5">exercise 5</a> &raquo;
+				<a class="currentBreadcrumbElement" href="../../../ov5/exercise5/project">project</a>	
+			</div>
+
+
+			<header>
+				<h1>IT2805 Project proposal</h1>
+			</header><hr>
+			
+			<section id="main">
+				
+				<section id="teamMembers">
+					<header>
+						<h2>Team Califlæ</h2>
+					</header>
+					<ul>
+						<li>kyrrelm / Kyrre Laugerud Moe</li>
+						<li>paulpm / Paul Philip Mitchell</li>
+					</ul>
+				</section>
+
+				<section id="checklistsAndEvaluations">
+					<header>
+						<h2>Checklists and evaluations</h2>
+					</header>
+					<ul>
+						<li><a href="http://org.ntnu.no/dps">De Passe Simple</a>
+							<ul>
+								<li><a href="dps-evaluation.html">De Passe Simple evaluation</a></li>
+								<li><a href="pdf/de-passe-simple_checklist.pdf">De Passe Simple checklist</a></li>
+							</ul>
+						</li>
+						<li><a href="http://online.ntnu.no">Online</a>
+							<ul>
+								<li><a href="online-evaluation.html">Online evaluation</a></li>
+								<li><a href="pdf/online-checklist.pdf">Online checklist</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section id="aboutProject">
+					<header>
+						<h2>About the project & primary goal</h2>
+					</header>
+					<p>The IT2805 Web Technologies project consists of creating a ten-page website including HTML for markup, CSS for styling, JavaScript for user interaction and dynamic features, XML for data structuring and optionally PHP for server-side functionality. 
+
+					We have decided to create a website for a fictional student organization called "Baldur, Linjeforeningen for ballsport". The user should be able to register as a student and view general information about the organization such as upcoming events, career opportunities, related businesses and published articles. Registered students will also be able to enroll in upcoming workshops, presentations and talks. 
+
+					Our primary goal is to create a user friendly, intuitive, aesthetically pleasing and universally designed website that will include certain features that other student organizations’ websites are missing. We hope that student organizations that are recently formed and/or does not have their own website will find inspiration in what we create.</p>
+				</section>
+
+				<section id="pages">
+					<header>
+						<h2>Pages</h2>
+					</header>
+					<ul>
+      					<li>Baldur, Linjeforeningen for ballsport
+      						<ul>
+					      		<li>Log in - Baldur</li>
+					      		<li>Register - Baldur</li>
+					      		<li>Upcoming events - Baldur
+      								<ul>
+						      			<li>event 1</li>
+						      			<li>event 2</li>
+						      			<li>event 3</li>
+      								</ul>
+      							</li>
+      							<li>Articles - Baldur
+						      		<ul>
+						      			<li>article 1</li>
+						      			<li>article 2</li>
+						      			<li>article 3</li>
+						      		</ul>
+						      	</li>
+					      		<li>Career opportunities - XBaldur
+						      		<ul>
+						      			<li>business1</li>
+						      			<li>business2</li>
+						      			<li>business3</li>
+						      		</ul>
+						      	</li>
+					      		<li>About - Baldur
+						      		<ul>
+						      			<li>FAQ</li>
+						      			<li>Contact</li>
+						      			<li>Sitemap</li>
+						      		</ul>
+						      	</li>
+					      		<li>My profile - Baldur
+						      		<ul>
+						      			<li>Profile settings</li>
+						      			<li>Enrolled in</li>
+						      		</ul>
+						      	</li>
+      						</ul>
+      					</li>
+      				</ul>
+				</section>
+
+				<section id="potentialAudience">
+					<header>
+						<h2>Potential audience and accessibility</h2>
+					</header>
+					<p>We expect an audience consisting of mostly students related to the organization and businesses who would like to get in touch with these students. 
+
+					The website will feature responsive design through the Bootstrap framework, which will allow users with different device resolutions to view the website optimally on either smartphones, tablets or desktop computers. 
+
+					In addition we will make use of the jQuery library to allow cross-browser functionality, so that no matter what browser you are on, all features of the website will work seamlessly.
+
+					An audience consisting of “students” is quite broad, and we have to take into consideration all parameters. By using Bootstrap and jQuery we eliminate the possibility of faulty responsive design and cross-browser dysfunctionalities. Next, we need to follow guidelines for universal design so that students or business representatives with either sight-, hearing- or motion handicaps will be able to use the website properly.</p>
+				</section>
+
+				<section id="multimediaContent">
+					<header>
+						<h2>Multi-media content</h2>
+					</header>
+					<p>Most of the multi-media requirements on our website include images and perhaps YouTube integration. We are going to use some images from other, already existing student organization websites, and use these images as dummy data. The same applies for YouTube videos. The actual fictional student organization logo will be designed by ourselves. We will probably use http://online.ntnu.no as a provider for most of our multi-media content needs.</p>
+				</section>
+
+				<section id="interactionsAndDynamic">
+					<header>
+						<h2>Interactions and dynamic features</h2>
+					</header>
+					<p>As we want to keep server-side programming to a minimum, none if possible, we have to be careful when promising interactive and dynamic features. First of we would like to make the web page easy to access via mobile devices. We will achieve this by applying “responsive design”. This means that the web page will change appearance at different resolutions to better suite the users device and its way of navigation. We also want to make it possible to register and log in. In order to do this there will have to be some sort of form and form validation. To make the forms user friendly we will dynamically change the ui according to input validation. This will make the forms much easier to fill out correctly.</p>
+				</section>
+
+				<section id="review">
+					<header>
+						<h2>What did we learn from reviewing similar websites?</h2>
+					</header>
+					<p>By reviewing similar websites, both bad ones and good ones, we have primarily learned that universal design and proper markup are fundamental aspects to a well-designed website. These two aspects are often overlooked by web developers, even though they are so important to certain users. 
+
+					We need to include a sitemap and have a well-functioning and intuitive menu so that the users know how the website is structured. In order to account for sight- and hearing disabled people, our markup needs to be well designed - alternative text for images, proper page titles, proper use of headings etc. We also need to take into consideration motion disabled users, so it must be able to navigate through the entire website using just your keyboard. 
+
+					Other than that, we value quality rather than quantity, meaning that the user will have access to the features he or she may need, but still restrict it so that the user is not presented with an overwhelming amount of information. Simple, intuitive design is a core goal of our website. </p>
+				</section>
+			</section>
+
+			<footer>
+				<hr>
+				<address>
+					<strong>Paul Philip Mitchell</strong> &middot; paulpm  &middot; paulpmit@gmail.com
+				</address>
+			</footer>
+
+			<form action="/paulpm/ov5/">
+		    	<input type="submit" value="Back">
+		    </form>
+		</div>
+
+
+	</body>
+</html>

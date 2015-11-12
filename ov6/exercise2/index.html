@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/overall-style.css">
+		<title>Forms - assignment 6</title>
+	</head>
+
+	<body>
+
+		<nav>
+			<ul>
+				<li><a href="">Exercise 2</a></li>
+			</ul>
+		</nav>
+
+		<div class="contentContainer">
+			<div class="breadcrumb">
+				<a class="previousBreadcrumbElement" href="../../">paulpm</a> &raquo;
+				<a class="previousBreadcrumbElement" href="../../ov6">ov6</a> &raquo;
+				<a class="currentBreadcrumbElement" href="../../ov6/exercise2">exercise 2</a>	
+			</div>
+
+			<header>
+				<h1>Student information</h1>
+			</header>
+			<hr>
+
+			<section id="main">
+			<div id="contact-form">
+				<form action="http://www.idi.ntnu.no/~michailg/IT2805/form.php" method="post">
+					<fieldset>
+						<legend>General information</legend>
+			    		<label for="name">
+			    			<span>Name: </span><input type="text" id="name" name="name" placeholder="Kari Nordmann" required> *<br>
+			    		</label>
+
+			    		<label for="mail">
+							<span>Email: </span><input type="email" id="mail" name="email" placeholder="kari@norge.no" required> *<br>
+						</label>
+
+						<label for="address">
+			    			<span>Address: </span><input type="text" id="address" name="address" placeholder="Klæbuveien 120" required> *<br>
+			    		</label>
+
+			    		<label for="phone">
+			    			<span>Phone number: </span><input type="tel" id="phone" name="phone" placeholder="12345678" required> *<br>
+			    		</label>
+
+			    		<label for="year">
+			    			<span>Year of studies: </span>
+				    		<select name="year" id="year">
+								<option value="1">1st Year - Freshman</option>
+								<option value="2">2nd Year - Sophomore</option>
+								<option value="3">3rd Year - Junior</option>
+								<option value="4">4th Year - Senior</option>
+							</select> *<br>
+						</label>
+
+						<label for="startdate">
+							<span>Expected start date: </span><input type="date" id="startdate" name="startDate" placeholder="mm/dd/yyyy"><br>
+						</label>
+					</fieldset><br>
+
+					<fieldset>
+						<legend>Classes you are interested in</legend>
+						<input type="checkbox" name="classes[]" value="ITX1001">ITX1001: HTML Basics<br>
+						<input type="checkbox" name="classes[]" value="ITX1002">ITX1002: URLs and Site Structures<br>
+						<input type="checkbox" name="classes[]" value="ITX2001">ITX2001: Introduction to Cascading Style Sheets (CSS)<br>
+						<input type="checkbox" name="classes[]" value="ITX2002">ITX2002: CSS Properties and Applications<br>
+						<input type="checkbox" name="classes[]" value="ABC1001">ABC1001: Working with Multimedia on the Web<br>
+						<input type="checkbox" name="classes[]" value="JSX1000">JSX1000: Introduction to JavaScript<br>
+						<input type="checkbox" name="classes[]" value="JSX1040">JSX1040: JavaScript: DOM<br>
+						<input type="checkbox" name="classes[]" value="XML1000">XML1000: XML: Formatting Namespace Trees<br>
+					</fieldset><br>
+
+					<fieldset>
+						<legend>Special requests or comments</legend>
+						<textarea name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea><br>
+					</fieldset><br>
+
+					<input type="submit" value="Submit">
+		    	</form>
+		    </div>
+			</section>
+
+			<footer>
+				<hr>
+				<address>
+					<strong>Paul Philip Mitchell</strong> &middot; paulpm  &middot; paulpmit@gmail.com
+				</address>
+			</footer>
+
+		</div>
+
+
+	</body>
+</html>

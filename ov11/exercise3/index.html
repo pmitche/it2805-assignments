@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 11 - Exercise 2</title>
+        <style>
+            #the-canvas { border: 1px dashed gray }   
+        </style>
+        <script>
+            addEventListener('load', function() {
+                var dogeImage = new Image();
+                dogeImage.src = 'images/doge.jpg';
+                var angle       = 0,
+                    constant    = Math.PI / 50,
+                    radius      = 80,
+                    xPos        = 0,
+                    yPos        = 0;
+                dogeImage.onload = function() {
+                    var canvas = document.getElementById("the-canvas");
+                    var canvasContext = canvas.getContext("2d");
+
+                    setInterval(function(){
+                        canvasContext.clearRect(xPos-1, yPos-1, 100, 100);
+                        angle = (angle == 2*Math.PI) ? (0 + constant) : (angle + constant);
+                        xPos = Math.sin(angle)*radius + 180;
+                        yPos = Math.cos(angle)*radius + 150; 
+                        canvasContext.drawImage(dogeImage, xPos, yPos);
+                    }, 20);
+                };
+            });          
+        </script>
+    </head>
+    <body>
+        <canvas id="the-canvas" width="500" height="400">   
+            Your browser does not support the &lt;canvas&gt; element.
+        </canvas>
+    </body>
+</html>
